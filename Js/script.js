@@ -10,12 +10,12 @@ function myFunction() {
   const bodyCheck = document.querySelector(".btn-checkout");
   const bodyContainer = document.querySelector(".body-con");
   const paymentContainer = document.querySelector(".payment-con");
-  const xBtn = document.querySelector(".x-btn");
+  const yBtn = document.querySelector(".y-btn");
 
 
 
 
-  bodyCheck.addEventListener("click", showModal)
+  bodyCheck.addEventListener("click", showModal);
   
 
   function showModal() {
@@ -23,7 +23,7 @@ function myFunction() {
     paymentContainer.style.filter = "blur(10px)";
   }
 
-  xBtn.addEventListener("click", hideModal)
+  yBtn.addEventListener("click", hideModal);
 
   function hideModal() {
     bodyContainer.style.visibility = "hidden";

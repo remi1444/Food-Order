@@ -347,7 +347,7 @@ transition: transform 0.8s, top 0.7s;
     height: 44px;
     position: relative;
     bottom: 8px;
-    right: 170px;
+    right: 165px;
     border-radius: 7px 0 0 0;
     background: #222831;
     
@@ -359,7 +359,7 @@ transition: transform 0.8s, top 0.7s;
     padding: 7px 14px;
     border-radius: 0px 10px 0 2px;
     position: relative;
-    left: 170px;
+    left: 165px;
     bottom: 53px;
 }
 
