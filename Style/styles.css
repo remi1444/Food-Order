@@ -346,21 +346,23 @@ transition: transform 0.8s, top 0.7s;
     width: 40px;
     height: 44px;
     position: relative;
-    bottom: 1rem;
-    right: 17.1rem;
+    bottom: 8px;
+    right: 170px;
     border-radius: 7px 0 0 0;
     background: #222831;
     
 }
+
 .x-btn{
     background:red;
     font-size: 2rem;
     padding: 7px 14px;
     border-radius: 0px 10px 0 2px;
     position: relative;
-    left: 17.1rem;
-    bottom: 5.4rem;
+    left: 170px;
+    bottom: 53px;
 }
+
 .x-btn:hover{
     background-color: rgb(105, 5, 5);
 }
