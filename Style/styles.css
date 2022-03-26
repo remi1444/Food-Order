@@ -231,23 +231,7 @@ font-size: 1.3rem;
    margin-top: 3rem; 
    
 }
-.x-btn{
-    background:red;
-    font-size: 2rem;
-    padding: 7px 14px;
-    border-radius: 0px 10px 0 2px;
-    position: relative;
-    left: 17.1rem;
-    bottom: 1rem;
-}
-.x-btn:hover{
-    background-color: rgb(105, 5, 5);
-}
 
-.x-btn a{
-    text-decoration: none;
-    color: #f5ebeb;
-}
 .confirm-pay__btn > a{
     text-decoration: none;
     color: whitesmoke;
@@ -356,4 +340,32 @@ transition: transform 0.8s, top 0.7s;
     width: 110%;
     border-radius: 5px;
     padding-left: 0.6rem;
+}
+
+.home-btn{
+    width: 40px;
+    height: 44px;
+    position: relative;
+    bottom: 1rem;
+    right: 17.1rem;
+    border-radius: 7px 0 0 0;
+    background: #222831;
+    
+}
+.x-btn{
+    background:red;
+    font-size: 2rem;
+    padding: 7px 14px;
+    border-radius: 0px 10px 0 2px;
+    position: relative;
+    left: 17.1rem;
+    bottom: 5.4rem;
+}
+.x-btn:hover{
+    background-color: rgb(105, 5, 5);
+}
+
+.x-btn a{
+    text-decoration: none;
+    color: #f5ebeb;
 }

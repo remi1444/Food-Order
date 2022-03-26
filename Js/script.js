@@ -10,6 +10,8 @@ function myFunction() {
   const bodyCheck = document.querySelector(".btn-checkout");
   const bodyContainer = document.querySelector(".body-con");
   const paymentContainer = document.querySelector(".payment-con");
+  const xBtn = document.querySelector(".x-btn");
+
 
 
 
@@ -19,5 +21,11 @@ function myFunction() {
   function showModal() {
     bodyContainer.style.visibility = "visible";
     paymentContainer.style.filter = "blur(10px)";
+  }
 
+  xBtn.addEventListener("click", hideModal)
+
+  function hideModal() {
+    bodyContainer.style.visibility = "hidden";
+    paymentContainer.style.filter = "blur(0)";
   }
