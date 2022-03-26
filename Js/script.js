@@ -17,11 +17,11 @@ function myFunction() {
 
   bodyCheck.addEventListener("click", showModal);
   
-
   function showModal() {
     bodyContainer.style.visibility = "visible";
     paymentContainer.style.filter = "blur(10px)";
   }
+
 
   yBtn.addEventListener("click", hideModal);
 
