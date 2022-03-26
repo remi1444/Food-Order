@@ -376,21 +376,17 @@ transition: transform 0.8s, top 0.7s;
     .y-btn{
         font-size: 1.5rem;
         padding: 7px 10px;
-        /* position:relative;
-        left: 152px;
-        bottom: 45px; */
-        margin-top: 1rem;
-        transform: translateX(-2.3rem);
+        margin-top: 0.8rem;
+        transform: translateX(-1.4rem);
         background-color: #9d0191;
     }
     
     .home-btn{
         width: 30px;
         height: 35px;
-        /* position: relative;
+        transform: translateX(1.4rem);
+        position: relative;
         bottom: 9px;
-        right: 150px; */
-        transform: translateX(2.4rem);
     
     }
 }
