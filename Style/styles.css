@@ -353,7 +353,7 @@ transition: transform 0.8s, top 0.7s;
     
 }
 
-.x-btn{
+.y-btn{
     background:red;
     font-size: 2rem;
     padding: 7px 14px;
@@ -363,11 +363,11 @@ transition: transform 0.8s, top 0.7s;
     bottom: 53px;
 }
 
-.x-btn:hover{
+.y-btn:hover{
     background-color: rgb(105, 5, 5);
 }
 
-.x-btn a{
+.y-btn a{
     text-decoration: none;
     color: #f5ebeb;
 }
