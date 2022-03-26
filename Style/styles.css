@@ -390,3 +390,19 @@ transition: transform 0.8s, top 0.7s;
     
     }
 }
+
+@media screen  and (max-device-width :365px){
+
+    .y-btn{
+        transform: translateX(-1.8rem);
+        background-color: #669d01;
+    }
+    .home-btn{
+        width: 30px;
+        height: 35px;
+        transform: translateX(2rem);
+        position: relative;
+        bottom: 9px;
+    
+    }
+}
