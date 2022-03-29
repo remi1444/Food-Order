@@ -294,8 +294,8 @@ transition: transform 0.8s, top 0.7s;
   .topnav a.icon {
     display: block;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 1%;
+    top: 10%;
   }
   
   /* Add a grey background color on mouse-over */
