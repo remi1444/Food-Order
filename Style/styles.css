@@ -292,11 +292,14 @@ transition: transform 0.8s, top 0.7s;
   
   /* Style the hamburger menu */
   /* hamburger icon too much on the right, allocated some space */
+    /* instead of using absolute position, use fixed so that when menu is active, it doesn't change/move up and down position
+    also used z-index so that content never flows ontop of icon */
   .topnav a.icon {
     display: block;
-    position: absolute;
+    position: fixed;
+    top: 2%;
     right: 1%;
-    top: 10%;
+    z-index: 10;
   }
   
   /* Add a grey background color on mouse-over */
