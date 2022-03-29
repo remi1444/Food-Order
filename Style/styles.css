@@ -291,6 +291,7 @@ transition: transform 0.8s, top 0.7s;
   }
   
   /* Style the hamburger menu */
+  /* hamburger icon too much on the right, allocated some space */
   .topnav a.icon {
     display: block;
     position: absolute;
@@ -330,13 +331,13 @@ transition: transform 0.8s, top 0.7s;
   .dot p{
       color:#FC8B0A;
   }
+  /* better colour contrast or colour scheme */
   a > .icon{
-    background-color: #979592;
+    background-color: #ffffff;
     display: flex;
     height: 30px;
   }
 .nav__{
-    background: #005490;
     width: 110%;
     border-radius: 5px;
     padding-left: 0.6rem;
