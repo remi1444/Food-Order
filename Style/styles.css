@@ -272,7 +272,14 @@ transition: transform 0.8s, top 0.7s;
     display: flex;
     overflow: hidden;
     background-color: #FC8B0A;
-    position: relative;
+    /* relative takes up space avail in the content, absolute doesn't that's why when menu is active, the container doesn't move up/down */
+    /* i feel its better menu is located on the right when active than the right or centred */
+    position: absolute;
+    right: 2%;
+    top: 10%;
+    background-color: #ffffff;
+    padding: 0 16px;
+    box-shadow: -10px 8px 12px rgba(48, 47, 47, 0.192);
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
@@ -282,7 +289,7 @@ transition: transform 0.8s, top 0.7s;
   
   /* Style navigation menu links */
   .topnav a {
-    color: white;
+    color: #000;
     margin: 1rem 0;
     text-decoration: none;
     display: block;
@@ -291,20 +298,27 @@ transition: transform 0.8s, top 0.7s;
   }
   
   /* Style the hamburger menu */
+  /* hamburger icon too much on the right, allocated some space */
+    /* instead of using absolute position, use fixed so that when menu is active, it doesn't change/move up and down position
+    also used z-index so that content never flows ontop of icon */
   .topnav a.icon {
     display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: fixed;
+    top: 2%;
+    right: 1%;
+    z-index: 10;
   }
   
   /* Add a grey background color on mouse-over */
+  /* since bg colour is white, item text is black for better eye contrast */
   .topnav a:hover {
-    color: black;
+    color: rgb(77, 76, 76);
+    font-weight: 700;
   }
   
   /* Style the active link (or home/logo) */
-  .active {
+  /* Use of pseudo-class enables text to be FC8B0A */
+  .topnav a:active {
     color: #FC8B0A;
   }
   a.logo{
@@ -313,7 +327,6 @@ transition: transform 0.8s, top 0.7s;
   .mylink{
     background-color: #979592;
   }
-
   .lines{
       display: flex;
       justify-content: center;
@@ -327,21 +340,14 @@ transition: transform 0.8s, top 0.7s;
       position: relative;
       bottom: 10px;
   }
-  .dot p{
-      color:#FC8B0A;
-  }
+  /* unnecessary since its not applied to any <p> */
+  /* better colour contrast or colour scheme */
   a > .icon{
-    background-color: #979592;
+    background-color: #ffffff;
     display: flex;
     height: 30px;
   }
-.nav__{
-    background: #005490;
-    width: 110%;
-    border-radius: 5px;
-    padding-left: 0.6rem;
-}
-
+/* Don't Repeat Yourself! style declarations in .topnav since its a container*/
 .home-btn{
     width: 40px;
     height: 44px;
