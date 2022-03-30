@@ -50,7 +50,7 @@ p {
 
 /* its better the img is a bg. Its more neat */
 .container-white{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/rachel-park-hrlvr2ZlUNk-unsplash.jpg');
+    background: linear-gradient(rgba(37, 36, 36, 0.7), rgba(0, 0, 0, 0.7)), url('/images/rachel-park-hrlvr2ZlUNk-unsplash.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
