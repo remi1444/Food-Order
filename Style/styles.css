@@ -80,20 +80,19 @@ img{
 
 }
 
-.btn-index{
+.btn-index {
+    /* centers the btn */
+    display: grid;
+    justify-content: center;
+    margin-bottom: 3rem;
     background-color: #000;
-    padding: 0.2rem 2rem;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    width: 80%;
-    position: relative;
-    left: 3rem;
-    /* margin-bottom: 4rem; */
-    /* margin: 0 auto; */
+    color: #fff;
+    padding: 1rem 0;
+    border-radius: 25px;
+    box-shadow: 0px 2px 7px #676776;
 }
 
-.btn-index > a{
+a {
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: bolder;
