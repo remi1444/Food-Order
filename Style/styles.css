@@ -107,11 +107,7 @@ img{
 .btn-index:hover {
     background-color: #222831;
 }
-.head-img{
-width: 450px;
-height: 250px;
-top: 15%;
-}
+/* deleted code since img is bg now */
 
 .btn-login__1{
     display: flex;
