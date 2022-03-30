@@ -92,12 +92,15 @@ img{
     box-shadow: 0px 2px 7px #676776;
 }
 
-a {
+/* typography */
+.btn-index {
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: bolder;
 }
-
+.btn-index:hover {
+    background-color: #222831;
+}
 .head-img{
 width: 450px;
 height: 250px;
