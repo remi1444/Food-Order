@@ -48,8 +48,12 @@ p {
 
 }
 
+/* its better the img is a bg. Its more neat */
 .container-white{
-    background: whitesmoke;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/rachel-park-hrlvr2ZlUNk-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -76,7 +80,9 @@ img{
     font-size: 4rem;
 }
 .h1-white{
-    color: var(--black);
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    
 
 }
 
@@ -104,9 +110,7 @@ img{
 .head-img{
 width: 450px;
 height: 250px;
-position: relative;
-left: 0px;
-bottom: 5px;
+top: 15%;
 }
 
 .btn-login__1{
