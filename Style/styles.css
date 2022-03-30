@@ -50,7 +50,7 @@ p {
 
 /* its better the img is a bg. Its more neat */
 .container-white{
-    background: linear-gradient(rgba(37, 36, 36, 0.7), rgba(0, 0, 0, 0.7)), url('/images/rachel-park-hrlvr2ZlUNk-unsplash.jpg');
+    background: linear-gradient(rgba(49, 49, 49, 0.5), rgba(0, 0, 0, 0.89)), url('/images/rachel-park-hrlvr2ZlUNk-unsplash.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,8 +82,8 @@ img{
 .h1-white{
     color: #fff;
     text-shadow: 0 0 3px #000;
-    
-
+    font-family: Pacifico, Shizuru, cursive;
+    font-size: 5rem;
 }
 
 .btn-index {
@@ -112,7 +112,7 @@ img{
 .btn-login__1{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 30%;
 }
 
 .btn-login__1 > *{
@@ -120,29 +120,22 @@ img{
     padding: 1rem 3.2rem;
     border-radius: 20px;
     border: none;
-    background: #FC8B0A;
     font-size: 1.5rem;
-
-
 }
-
 .btn-login__2 > a{
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
     font-weight: bolder;
 }
-.sign-up{
-    background: transparent;
-    border: 2px solid #FC8B0A;
-    
-}
 
-button:disabled,
+button:disabled a {
+    color: #ffffff;
+    font-weight: 500;
+}
 button[disabled]{
-  border: 1px solid #999999;
-  background-color: #cccccc;
-  color: #666666;
+  border: 1px solid #fff;
+  background-color: transparent;
 }
 
 .customer-pic{
@@ -405,14 +398,18 @@ transition: transform 0.8s, top 0.7s;
         bottom: 9px;
     }
 }
-
+@media screen  and (max-device-width :675px){
+    .btn-login__1 {
+        width: 80%;
+    }
+}
+    
 /* img in smaller screens is right at the top */
 @media screen  and (max-device-width :375px){
     .image-header{
         position: relative;
         top: 5%;
     }
-
     .y-btn{
         transform: translateX(-1.8rem);
     }
