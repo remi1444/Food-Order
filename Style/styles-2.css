@@ -436,9 +436,4 @@ option{
     display: flex;
     height: 30px;
   }
-.nav__{
-    background: #005490;
-    width: 110%;
-    border-radius: 5px;
-    padding-left: 0.6rem;
-}
+/* removed this code because you've already styled the navbar, repeptition must be avoided */
