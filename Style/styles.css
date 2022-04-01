@@ -433,6 +433,16 @@ transition: transform 0.8s, top 0.7s;
         transform: translateX(2rem);
         position: relative;
         bottom: 9px;
-    
     }
+}}
+
+
+.removed-img{
+    visibility: hidden;
+}
+.flex-this{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin: 0 0.2rem 0 0rem;
 }
