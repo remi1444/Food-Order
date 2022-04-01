@@ -42,14 +42,18 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #FC8B0A;
+    background: #ffffff;
     overflow: hidden;
     height: 100vh;
 
 }
 
+/* its better the img is a bg. Its more neat */
 .container-white{
-    background: whitesmoke;
+    background: linear-gradient(rgba(49, 49, 49, 0.5), rgba(0, 0, 0, 0.89)), url('/images/rachel-park-hrlvr2ZlUNk-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -57,7 +61,11 @@ p {
     height: 300px;
     width: 300px;
     border-radius: 50%;
-   
+    filter: drop-shadow(0 0 8px #00000052);
+    /* centres the image */
+    display: flex;
+    margin: 0 auto;
+    z-index: 1;
 }
 img{
     width: 100%;
@@ -65,45 +73,46 @@ img{
 
 .h1{
     color: whitesmoke;
+    text-shadow: 0 0 3px orangered, 0 0 3px orangered, 0 0 3px orangered, 0 0 3px orangered, 0 0 3px orangered;
     margin: 4rem 0;
     text-align: center;
+    font-family: Pacifico, Shizuru, cursive;
+    font-size: 4rem;
 }
 .h1-white{
-    color: var(--black);
-
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    font-family: Pacifico, Shizuru, cursive;
+    font-size: 5rem;
 }
 
-.btn-index{
-    background: white;
-    padding: 0.7rem 2rem;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    width: 80%;
-    position: relative;
-    left: 3rem;
-    /* margin-bottom: 4rem; */
-    /* margin: 0 auto; */
+.btn-index {
+    /* centers the btn */
+    display: grid;
+    justify-content: center;
+    margin-bottom: 3rem;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 0;
+    border-radius: 25px;
+    box-shadow: 0px 2px 7px #676776;
 }
 
-.btn-index > a{
+/* typography */
+.btn-index {
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: bolder;
 }
-
-.head-img{
-width: 450px;
-height: 250px;
-position: relative;
-left: 0px;
-bottom: 5px;
+.btn-index:hover {
+    background-color: #222831;
 }
+/* deleted code since img is bg now */
 
 .btn-login__1{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 30%;
 }
 
 .btn-login__1 > *{
@@ -111,84 +120,91 @@ bottom: 5px;
     padding: 1rem 3.2rem;
     border-radius: 20px;
     border: none;
-    background: #FC8B0A;
     font-size: 1.5rem;
-
-
 }
-
 .btn-login__2 > a{
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
     font-weight: bolder;
 }
-.sign-up{
-    background: transparent;
-    border: 2px solid #FC8B0A;
-    
-}
 
-button:disabled,
+button:disabled a {
+    color: #ffffff;
+    font-weight: 500;
+}
 button[disabled]{
-  border: 1px solid #999999;
-  background-color: #cccccc;
-  color: #666666;
+  border: 1px solid #fff;
+  background-color: transparent;
 }
-
+.login-container {
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+}
 .customer-pic{
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    background-color: rgb(185, 185, 214);
+    box-shadow: 0 5px 10px rgba(39, 38, 38, 0.144);
+    width: 45%;
+    height: 180px;
+    background-color: rgb(250, 250, 250);
     position: relative;
-    left: 25%;
-    margin-bottom: 3rem;
+    top: 25%;
+    /* centres the img */
     display: flex;
-    align-items: center;
-    justify-content: center;
-
+    margin: 0 auto;
+   
 }
 .form-1{
-   margin-left: 2.5rem;
-
-
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 2rem;
 }
-input{
-    width: 90%;
-    border-right: 3px;
-    border-left: 3px;
-    border-top: 3px;
-    margin: 0.2rem 0 4rem 0;
+.text-field {
+    padding: 1rem 3rem;
+    margin-bottom: -1rem;
+}
+.text-field input{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000;
+    font-size: 1.5rem;
 }
 
 input:focus{
-    width: 90%;
-    /* background: transparent; */
     outline: none;
-    margin-top: 3rem;
+    border-bottom: 3px solid rgba(39, 38, 38, 0.527);
 }
 
-label{
-font-size: 1.3rem;
+label {
+    font-size: 1.5rem;
+    color:rgba(39, 38, 38, 0.527);
 }
-.sign-up-btn{
-    background: #FC8B0A;
-    width: 80%;
-    padding: 1rem 3.2rem;
+.sign-up-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.sign-up-btn a {
+    border: 2px solid #FC8B0A;
+    padding: 1rem 2rem;
     border-radius: 20px;
     outline: none;
-    border: none;
-    position: relative;
-    left: 30px;
 }
+/* typography */
 .sign-up-btn > a{
     text-decoration: none;
-    color: #fff;
-    font-weight: bolder;
+    color: #FC8B0A;
+    font-weight: bold;
     text-transform: uppercase;
 }
-
+.sign-up-btn a:hover {
+    color: #000;
+    border: 2px solid #000;
+}
 
 .okay-icon > img{
     height: 50px;
@@ -280,6 +296,8 @@ transition: transform 0.8s, top 0.7s;
     background-color: #ffffff;
     padding: 0 16px;
     box-shadow: -10px 8px 12px rgba(48, 47, 47, 0.192);
+    /* avoids img or content from overflowing/ overlapping on menu */
+    z-index: 10;
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
@@ -333,7 +351,7 @@ transition: transform 0.8s, top 0.7s;
       align-items: center;
       height: 6px;
       width: 30px;
-      background: #f4f7f0;
+      background: #000000;
       padding: 2px;
       margin: 5px;
       border-radius: 5px;
@@ -378,6 +396,11 @@ transition: transform 0.8s, top 0.7s;
     color: #f5ebeb;
 }
 
+@media screen  and (max-device-width :675px){
+    .btn-login__1 {
+        width: 80%;
+    }
+
 @media screen  and (max-device-width :375px){
     .y-btn{
         font-size: 1.5rem;
@@ -394,9 +417,13 @@ transition: transform 0.8s, top 0.7s;
         bottom: 9px;
     }
 }
-
-@media screen  and (max-device-width :365px){
-
+    
+/* img in smaller screens is right at the top */
+@media screen  and (max-device-width :375px){
+    .image-header{
+        position: relative;
+        top: 5%;
+    }
     .y-btn{
         transform: translateX(-1.8rem);
     }

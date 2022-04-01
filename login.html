@@ -15,7 +15,7 @@
 
 <!-- Top Navigation Menu -->
 <div class="topnav">
-  <a href="#home" class="active dot"><p>.</p></a>
+  <a href="#home" class="active dot" style="display: none;"></a>
   <!-- Navigation links (hidden by default) -->
   <div id="myLinks" class="myLink">
     <a href="./index.html" class="nav__">Home</a>
@@ -35,27 +35,29 @@
 </div>
 
 
-    <div class="hamburger-btn">.  </div>
-    <img src="./images/profile-icon.svg" alt="customer" class="customer-pic">
+    <!-- <div class="hamburger-btn">.  </div> -->
+    <section class="login-container">
+      <img src="./images/profile-icon.svg" alt="customer" class="customer-pic">
     <form class="form-1">
-       <div class="firstname">
-         <label for="firstname" >Enter Name</label>
-         <input type="text" name="text" id="fname">
-       </div>
+      <div class="text-field">
+        <label for="firstname" >Enter Name</label>
+        <input type="text" name="text" id="fname">
+      </div>
 
-       <div class="lastname">
-        <label for="email" class="s">Enter Email Address</label>
-        <input type="email" name="email" id="email">
-       </div>
+      <div class="text-field">
+       <label for="email" class="s">Enter Email Address</label>
+       <input type="email" name="email" id="email">
+      </div>
 
-       <div class="lastname">
-        <label for="password">Enter Your Password</label>
-        <input type="password" name="password" id="password">
-       </div>
+      <div class="text-field">
+       <label for="password">Enter Your Password</label>
+       <input type="password" name="password" id="password">
+      </div>
 
     </form>
 
     <button class="sign-up-btn"><a href="./get a meal.html">Login</a></button>
+  </section>
 </body>
 <script src="./Js/script.js"></script>
 </html>
