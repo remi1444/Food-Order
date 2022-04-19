@@ -11,13 +11,13 @@
 </head>
 <body>
     
-<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- Top Navigation Menu -->
+
 <div class="topnav">
   <a href="#home" class="active dot" style="display: none;"></a>
-  <!-- Navigation links (hidden by default) -->
+
   <div id="myLinks" class="myLink">
     <a href="./index.html" class="nav__">Home</a>
     <a href="./login-1.html" class="nav__">Get A Meal</a>
@@ -26,9 +26,8 @@
     <a href="./checkout.html" class="nav__">Check Out</a>
     <a href="./payment method.html" class="nav__">Payment Method</a>
   </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <!-- <i class="fa fa-bars"></i> -->
+   
     <div class="lines"></div>
     <div class="lines"></div>
     <div class="lines"></div>
@@ -37,9 +36,8 @@
 
 
     <div class="pay-now-con">
-        <div class="body-con">
-            <div class="home-btn"><a href="./index.html"><img src="./images/home_icon - yellow.svg"></a></div>
-            <div  class="y-btn"><a href="#">X</a></div>
+        <div class="body-con" id="modal">
+           
             <div class="okay-icon">
                 <img src="./images/ticked-green.svg" alt="okay" class="image-ticked">
             </div>
@@ -51,13 +49,9 @@
         
             <a href="./index.html" class="payment-last__a">View other details > </a>
            </div>
-           <!-- <button class="confirm-pay__btn">
-               <a href="#">DONE</a>
-           </button> -->
     </div>
    <div class="payment-con">
     <header class="top-payment">
-        <!-- <p class="arrow"><a href="#">&#8592;</a></p> -->
         <h1>Payment Method</h1>
     </header>
     <div class="item-info">
@@ -96,7 +90,7 @@
             <input type="number" name="number" id="cvv" placeholder="***" class="input-box">
            </div>
     </form>
-    <button class="btn-checkout btn-mid"><a href="#">COnfirm payment</a></button>
+    <button class="btn-checkout btn-mid"><a href="#">Confirm payment</a></button>
    </div>
 </body>
 <script src="./Js/script.js"></script>

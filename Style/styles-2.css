@@ -91,7 +91,7 @@ border:  #FC8B0A 2px solid;
     margin-top: 0.4rem;
 }
 .empty{
-    border: 1px solid coral;
+    /* border: 1px solid #CCC8C8; */
     border-radius: 50%;
     width: 1.9rem;
     height:1.9rem;
@@ -99,14 +99,19 @@ border:  #FC8B0A 2px solid;
     margin-left: 0.5rem;
     margin-bottom: 0.8rem;
 }
+
 .empty-dot{
-    background: coral;
     height: 1.7rem;
     width: 1.7rem;
     border-radius: 50%;
     margin: auto 0;
     position: relative;
     right: 1;
+}
+.empty-dot.visible{
+    background: #FC8B0A;
+    animation: fade-slide 0.6s ease-out forwards;
+
 }
 .price{
     font-size: 12px;
@@ -159,10 +164,9 @@ border:  #FC8B0A 2px solid;
 }
 .plus-btn{
     position: relative;
-    bottom: 2px;   
+    bottom: 1px;   
     font-size: 16px;
     font-weight: bolder;
-    
 }
 .bottom{
     display: flex;
@@ -341,12 +345,12 @@ margin-left: 1.6rem;
 }
 
 .form-input{
-    margin: 1rem;
+    margin: 2rem;
     margin-left: 2.7rem;
-}
 
+}
 #States,input{
-    width: 90%;
+    width: 100%;
     overflow: hidden;
     padding: 1rem;
     border-radius: 3px;
@@ -365,17 +369,26 @@ option{
     background: #FC8B0A;
     color: whitesmoke;
 }
+.last_paynow{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+}
 .last_paynow > button{
     padding: 0.5rem 3.5rem;
     border: none;
     background: #f58302;
     border-radius: 10px;
     text-transform: uppercase;
-    color: aliceblue;
+    color: aliceblue; 
+}
+.btn_div > a{
+    text-decoration: none;
 }
 .btn_div{
     width: 50%;
     margin: 3rem auto;
+
 }
 
   /* Style the navigation menu */
@@ -444,5 +457,27 @@ option{
     background-color: #979592;
     display: flex;
     height: 30px;
+  }
+ 
+  .updater.visible{
+      display: block;
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      background: #FC8B0A;
+      position: absolute;
+      right: 11.9rem;
+      top: 7.8rem;
+      animation: fade-slide 0.6s ease-out forwards;
+  }
+
+  @keyframes fade-slide {
+    from {
+      transform: translateY(-0.2rem);
+      /* transform: scale(10px); */
+    }
+    to {
+      transform: translateY(0);
+    }
   }
 /* removed this code because you've already styled the navbar, repeptition must be avoided */

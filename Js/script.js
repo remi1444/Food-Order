@@ -7,25 +7,30 @@ function myFunction() {
     }
   }
 
-  const bodyCheck = document.querySelector(".btn-checkout");
-  const bodyContainer = document.querySelector(".body-con");
-  const paymentContainer = document.querySelector(".payment-con");
-  const yBtn = document.querySelector(".y-btn");
-
-
-
-
-  bodyCheck.addEventListener("click", showModal);
+  const addModal = document.querySelector(".body-con");
+  const paymentBtn = document.querySelector(".btn-checkout");
+  const empty = document.querySelector(".empty-dot");
+  const addIcon = document.querySelector(".add-icon");
+  const filterImg = document.querySelector(".updater");
+  
   
   function showModal() {
-    bodyContainer.style.visibility = "visible";
-    paymentContainer.style.filter = "blur(10px)";
+    addModal.classList.toggle("visible");
   }
 
+  paymentBtn.addEventListener("click", showModal);
 
-  yBtn.addEventListener("click", hideModal);
+  
+const colorChange = function () {
+empty.classList.toggle("visible");
+filterImg.classList.toggle("visible");
 
-  function hideModal() {
-    bodyContainer.style.visibility = "hidden";
-    paymentContainer.style.filter = "blur(0)";
-  }
+  
+}
+
+addIcon.addEventListener("click", colorChange);
+
+
+
+
+  // console.log(empty);
